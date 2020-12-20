@@ -12,38 +12,53 @@ basic commands:
 #set config values: - add name and email
 
 git config --global user.name "suvasis mukherjee"
+
 git config --global user.email "suvasis@yahoo.com"
+
 git config --list
 
 #initialize a repo from existing code
 git init --- run this command from within the directory
+
              .git contains everything inside to track everything inside
 
 #before first commit
+
 git status
 
 #to ignore files
+
 touch .gitignore
+
 add the files or extensions you want to be ignored..
 
 #you can check
+
 git status
 
 
 #push changes to the remote
 
 git diff -- see changes
+
 git status
+
 git add -A -- to staging
+
 git commit -m "message" -- committed locally
+
 git pull origin master -- pull from the repo
+
 git push origin master --- master is the branch and origin is the remote repo
 
 #common workflow to workw with git
 
 git branch <name of branch>
+
 git branch  --- list all the branches
+
 git checkout  <branch>
+
 git branch
 
 
@@ -51,6 +66,7 @@ git branch
 git status
 
 git add -A  ---to staging
+
 git commit -m  "mgs" -- committed to local repo
 
 git push -u origin <branch>
@@ -59,7 +75,9 @@ git branch -a  -- shows bothe the local and the remote directories
 
 
 git checkout master
+
 git pull origin master
+
 get branch ---merged -- merged branches
 
 git merge <branch>
@@ -69,39 +87,58 @@ working dir -> staging area --> .git directory repository
                to be committed -> commitwd
 
 # add files to staging area
+
 git add -A
 
 #to remove from staging
+
 git reset <file name> or git reset --- to remove everything
+
 git ststus
 
 # to commit
+
 git commit -m "how to use git"
+
 git status -- nothing to commit 
+
 git log
 
 # clone a remote repo
+
 git clone <url > <where to clone>
 
 git clone github.com/suvasis .
 
 # view info ab the remote repo
+
 git remove -v --- list the info ab the remote repo
+
 git branch -a -- all the branches
 
 #mwerge a branch
+
 git checkout master
+
 git put origin master
+
 git branch --merged
+
 git merge <branch name>
+
 git push origin master 
 
 
 # to delete
+
 git branch --merged
+
 git branch -d <branch name>
+
 git branch -a
+
 git push origin --delete <branch name>
+
 git branch -a
 
 
@@ -109,24 +146,3 @@ git branch -a
 
 
 
-
-
-
-
-
-
-
-
-  686  git remote -v
-  687  git bRANCH -A
-  688  git branch -a
-  689  git diff
-  690  git status
-  691  git add -A
-  692  git status
-  693  git commit -m "added a comment"
-  694  git pull origin master
-  695  git push origin master
-  696  git push origin master
-  697  git push origin master
-  698  git push origin master
